@@ -1,0 +1,53 @@
+#search for key words in the reviews list
+#find each emphazied/key word
+#for each word found reprint the list with the capitalized key word. 
+
+
+import re
+
+python_reviews = [ "This product is really good. I'm impressed with its quality.", "The performance of this product is excellent. Highly recommended!", "I had a bad experience with this product. It didn't meet my expectations.", "Poor quality product. Wouldn't recommend it to anyone.", "The product was average. Nothing extraordinary about it."]
+for positive in python_reviews: 
+    positive_match= re.findall(r"\b (good|excellent|great|awesome|fantastc|superb|amazing)\b", positive)
+    if positive_match: 
+        for positive_match in python_reviews: 
+            print (positive.lower())
+    else: ('no positive keywords')
+
+
+python_reviews = ["This product is really good. I'm impressed with its quality.", "The performance of this product is excellent. Highly recommended!", "I had a bad experience with this product. It didn't meet my expectations.", "Poor quality product. Wouldn't recommend it to anyone.", "The product was average. Nothing extraordinary about it."]
+for negative in python_reviews: 
+        negative_match= re.findall(r"\b (bad|poor|terrible|horrible|awful|disappointing|subpar)\b",negative)
+        if negative_match: 
+            for negative_match in python_reviews:
+             print (negative.upper())
+        else: ('no positive keywords')
+
+positive_words = ["good", "excellent", "great", "awesome", "fantastic", "superb", "amazing"] 
+negative_words = ["bad", "poor", "terrible", "horrible", "awful", "disappointing", "subpar"]
+python_reviews = [ "This product is really good. I'm impressed with its quality.", "The performance of this product is excellent. Highly recommended!", "I had a bad experience with this product. It didn't meet my expectations.", "Poor quality product. Wouldn't recommend it to anyone.", "The product was average. Nothing extraordinary about it." ]
+
+python_reviews = [ "This product is really good. I'm impressed with its quality.", "The performance of this product is excellent. Highly recommended!", "I had a bad experience with this product. It didn't meet my expectations.", "Poor quality product. Wouldn't recommend it to anyone.", "The product was average. Nothing extraordinary about it." ]
+#keywordsp= ['good', 'excellent', 'bad', 'poor', 'average']
+keywordsp= ['good', 'excellent',]
+keywordsn= ['bad', 'poor','average']
+
+#positive_emphasis= sum (word in positive_words in python_reviews) 
+
+#print("Total positive words:", positive_emphasis)
+
+for keywordsp in python_reviews:
+     keywordsp[python_reviews] +=1
+     if keywordsp in python_reviews (keywordsp):
+        print (keywordsp.count)
+     else:
+         print ('not found')
+
+    #positive_count = sum(1 for word in python_reviews if word in keywordsp)
+    #negative_count = sum(1 for word in python_reviews if word in keywordsn)
+#total_positive += positive_count
+#total_negative += negative_count
+#print( positive_count)
+#print(negative_count)
+
+
+#print(python_reviews.count('good'))
